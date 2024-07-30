@@ -15,3 +15,4 @@ require("lazy").setup({
     spec = "taitesen.lazy",
     change_detection = { notify = false }
 })
+
