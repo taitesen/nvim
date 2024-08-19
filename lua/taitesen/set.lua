@@ -37,7 +37,6 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.background = "dark"
 
-
 -- neovide configuration
 if vim.g.neovide then
 vim.g.neovide_transparency = 0.7
