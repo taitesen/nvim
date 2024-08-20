@@ -34,10 +34,10 @@ return {
             incremental_selection = {
                 enable = true,
                 keymaps = {
-                    init_selection = ";ss",
-                    node_incremental = ";ss",
-                    scope_incremental = ";sc",
-                    node_decremental = ";sd",
+                    init_selection = "<C-space>",
+                    node_incremental = "<C-space>",
+                    scope_incremental = false,
+                    node_decremental = "<bs>",
                 },
             },
 
