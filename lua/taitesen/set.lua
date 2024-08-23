@@ -1,3 +1,5 @@
+-- CustomColorscheme frm raz.lua
+-- require('raz').setup()
 vim.opt.guicursor = ""
 
 vim.opt.path:append("**")
