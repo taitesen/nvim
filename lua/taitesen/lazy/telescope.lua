@@ -77,7 +77,8 @@ return {
                 ":lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For  ')})<CR>")
             vim.keymap.set("n", "sg", ":lua require('telescope.builtin').live_grep()<CR>")
             vim.keymap.set("n", "sb", ":lua require('telescope.builtin').buffers()<CR>")
-
+            vim.keymap.set("n", "sz", ":lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>")
+            vim.keymap.set("n", "sc", ":lua require('telescope.builtin').grep_string()<CR>")
             vim.keymap.set("n", "<leader>vh", ":Telescope help_tags<CR>")
 
             -- Grep the current highlighted selction

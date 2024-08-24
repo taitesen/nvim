@@ -6,7 +6,8 @@
      light_gray = "#807d7d",
      green = "#23b521",
      yellow = "#ffff00",
-     red = "#ff0000"
+     red = "#ff0000",
+     gray = "#3b3b3b"
  }
 
  local function setup()
