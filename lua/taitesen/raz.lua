@@ -41,7 +41,7 @@
      hi("Constant", {fg = colors.light_gray, style = "none"})
      hi("String", {fg = colors.green, style = "none"})
      hi("Variable", {fg = colors.fg})
-     hi("Function", {fg = colors.white, style = "none"})
+     hi("Function", {fg = colors.white, style = "bold"})
      hi("Keyword", {fg = colors.yellow, style = "bold"})
      hi("Type", {fg = colors.gray, style = "none"})
      hi("Identifier", {fg = colors.fg})
@@ -51,7 +51,7 @@
      hi("CursorLineNr", {fg = colors.yellow, style = "bold"})
      hi("Cursor", {fg = colors.yellow})
      hi("Error", {fg = colors.red})
-     hi("Warning", {fg = colors.red})
+     hi("Warning", {fg = colors.yellow})
  end
 
  return {
