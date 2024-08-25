@@ -43,6 +43,7 @@ end)
 vim.keymap.set("n", "<leader>vv", "<cmd>badd $HOME/Vault/script/<CR>")
 vim.keymap.set("n", "<leader>co", "<cmd>e $HOME/.config/nvim/lua/taitesen/remap.lua<CR>")
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", ";t", ":Telescope ")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
