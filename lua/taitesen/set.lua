@@ -1,5 +1,5 @@
 -- CustomColorscheme frm raz.lua
-require('taitesen.raz').setup()
+-- require('taitesen.raz').setup()
 vim.opt.guicursor = ""
 
 vim.opt.path:append("**")

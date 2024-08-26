@@ -25,8 +25,8 @@ return {
                 conditionals = { "italic" },
                 loops = {},
                 functions = {},
-                keywords = {},
-                strings = { "italic" },
+                keywords = { "bold" },
+                strings = {},
                 variables = {},
                 numbers = {},
                 booleans = {},
@@ -66,6 +66,6 @@ return {
                 },
             },
         })
-        -- vim.cmd.colorscheme("catppuccin")
+        vim.cmd.colorscheme("catppuccin")
     end
 }
