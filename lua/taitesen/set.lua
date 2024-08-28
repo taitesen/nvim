@@ -41,16 +41,19 @@ vim.opt.background = "dark"
 
 -- neovide configuration
 if vim.g.neovide then
-vim.g.neovide_transparency = 0.7
-vim.g.transparency = 0.9
-vim.g.neovide_background_color = "#000000"
-vim.g.neovide_refresh_rate = 90
-vim.g.neovide_cursor_antialiasing = true
-vim.g.neovide_cursor_vfx_mode = "pixiedust"
-vim.o.guifont = "JetBrainsMono Nerd Font:h10"
-vim.g.neovide_padding_top = 10
-vim.g.neovide_padding_bottom = 10
-vim.g.neovide_padding_right = 10
-vim.g.neovide_padding_left = 10
+    vim.g.neovide_transparency = 1.0
+    vim.g.transparency = 0.9
+    vim.g.neovide_background_color = "#000000"
+    vim.g.neovide_refresh_rate = 90
+    vim.g.neovide_cursor_antialiasing = true
+    vim.g.neovide_cursor_vfx_mode = "pixiedust"
+    vim.g.neovide_cursor_vfx_particle_lifetime = 1.2
+    vim.g.neovide_cursor_vfx_particle_density = 7.0
+    vim.g.neovide_cursor_vfx_particle_opacity = 200.0
+    vim.g.neovide_cursor_vfx_particle_speed = 10.0
+    vim.o.guifont = "Iosevka Nerd Font:h10"
+    vim.g.neovide_padding_top = 20
+    vim.g.neovide_padding_bottom = 20
+    vim.g.neovide_padding_right = 20
+    vim.g.neovide_padding_left = 20
 end
-
