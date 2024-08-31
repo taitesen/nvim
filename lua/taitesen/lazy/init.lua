@@ -14,7 +14,7 @@ return {
             require('yugem').setup {}
         end,
         init = function ()
-            vim.cmd("colorscheme yugem")
+            -- vim.cmd("colorscheme yugem")
         end
     }
 }
