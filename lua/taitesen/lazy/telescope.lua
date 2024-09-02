@@ -87,7 +87,7 @@ return {
             vim.keymap.set("n", "sr", function()
                 require("telescope.builtin").find_files({
                     prompt_title = ".dotfiles",
-                    cwd = os.getenv("HOME") .. "/.config",
+                    cwd = os.getenv("HOME") .. "/.local/src",
                     hidden = true,
                 })
             end)
