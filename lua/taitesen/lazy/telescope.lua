@@ -92,6 +92,14 @@ return {
                 })
             end)
 
+            vim.keymap.set("n", "sn", function()
+                require("telescope.builtin").find_files({
+                    prompt_title = ".dotfiles",
+                    cwd = os.getenv("HOME") .. "/.config/nvim",
+                    hidden = true,
+                })
+            end)
+
             vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>")
             vim.keymap.set("n", "<leader>gc", ":Telescope git_commits<CR>")
         end,
