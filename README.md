@@ -105,11 +105,3 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 |    <kbd>LEADER</kbd>  +   <kbd>c</kbd><kbd>o</kbd>  |  opens     'opens  nvim-keymaps  configuration'  |
 
 </details>
-
-
-
-
-
-
-
-
