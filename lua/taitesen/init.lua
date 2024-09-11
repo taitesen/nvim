@@ -1,6 +1,7 @@
 require("taitesen.set")
 require("taitesen.remap")
 require("taitesen.lazy_init")
+require("taitesen.lazy.markdown")
 
 local augroup = vim.api.nvim_create_augroup
 local taitesengroup = augroup('taitesen', {})

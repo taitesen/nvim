@@ -39,21 +39,36 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.background = "dark"
 
--- neovide configuration
-if vim.g.neovide then
-    vim.g.neovide_transparency = 1.0
-    vim.g.transparency = 0.9
-    vim.g.neovide_background_color = "#000000"
-    vim.g.neovide_refresh_rate = 90
-    vim.g.neovide_cursor_antialiasing = true
-    vim.g.neovide_cursor_vfx_mode = "pixiedust"
-    vim.g.neovide_cursor_vfx_particle_lifetime = 1.2
-    vim.g.neovide_cursor_vfx_particle_density = 7.0
-    vim.g.neovide_cursor_vfx_particle_opacity = 200.0
-    vim.g.neovide_cursor_vfx_particle_speed = 10.0
-    vim.o.guifont = "Iosevka Nerd Font:h10"
-    vim.g.neovide_padding_top = 20
-    vim.g.neovide_padding_bottom = 20
-    vim.g.neovide_padding_right = 20
-    vim.g.neovide_padding_left = 20
-end
+-- Markdown Preview Configuration
+vim.g.mkdp_auto_start = 0
+vim.g.mkdp_auto_close = 1
+vim.g.mkdp_refresh_slow = 0
+vim.g.mkdp_command_for_global = 0
+vim.g.mkdp_open_to_the_world = 0
+vim.g.mkdp_open_ip = ''
+vim.g.mkdp_browser = ''
+vim.g.mkdp_echo_preview_url = 0
+vim.g.mkdp_browserfunc = ''
+vim.g.mkdp_preview_options = {
+    mkit = {},
+    katex = {},
+    uml = {},
+    maid = {},
+    disable_sync_scroll = 0,
+    sync_scroll_type = 'middle',
+    hide_yaml_meta = 1,
+    sequence_diagrams = {},
+    flowchart_diagrams = {},
+    content_editable = false,
+    disable_filename = 0,
+    toc = {}
+}
+vim.g.mkdp_markdown_css = ''
+vim.g.mkdp_highlight_css = ''
+vim.g.mkdp_port = ''
+vim.g.mkdp_page_title = '「${name}」'
+vim.g.mkdp_images_path = '/home/taitesen/Pictures/'
+vim.g.mkdp_filetypes = { 'markdown' }
+vim.g.mkdp_theme = 'dark'
+vim.g.mkdp_combine_preview = 0
+vim.g.mkdp_combine_preview_auto_refresh = 1

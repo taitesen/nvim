@@ -17,5 +17,5 @@ return {
             -- vim.cmd("colorscheme yugem")
         end
     }
-}
 
+}
