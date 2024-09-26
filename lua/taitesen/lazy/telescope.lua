@@ -57,10 +57,12 @@ return {
                         }
                     },
                     buffers = {
+                        theme = "dropdown",
                         sort_mru = true,
                         mappings = {
-                            i = { ["<c-d>"] = actions.delete_buffer },
+                            n = { ["<C-d>"] = actions.delete_buffer },
                         },
+                        previewer = false,
                     },
                 },
             }

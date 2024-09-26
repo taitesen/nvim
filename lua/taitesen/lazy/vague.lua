@@ -2,7 +2,7 @@ return {
     "vague2k/vague.nvim",
     config = function()
         require("vague").setup({
-            transparent = true, -- don't set background
+            transparent = false, -- don't set background
             style = {
                 -- "none" is the same thing as default. But "italic" and "bold" are also valid options
                 boolean = "none",
