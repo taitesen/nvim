@@ -8,7 +8,7 @@ vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.virtualedit = "block"
 
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
