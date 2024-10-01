@@ -36,6 +36,9 @@ autocmd({ "BufWritePre" }, {
     command = [[%s/\s\+$//e]],
 })
 
+vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "#aaaaaa" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "#aaaaaa" })
+
 autocmd('LspAttach', {
     group = taitesengroup,
     callback = function(e)

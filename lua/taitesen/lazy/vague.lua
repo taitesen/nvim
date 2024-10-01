@@ -36,7 +36,7 @@ return {
                 fg = "#cdcdcd",
                 floatBorder = "#474747",
                 line = "#171717",
-                comment = "#474747",
+                comment = "#676767",
                 builtin = "#bad1ce",
                 func = "#be8c8c",
                 string = "#deb896",
