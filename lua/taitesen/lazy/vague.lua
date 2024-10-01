@@ -34,9 +34,9 @@ return {
             colors = {
                 bg = "#18191a",
                 fg = "#cdcdcd",
-                floatBorder = "#878787",
-                line = "#282830",
-                comment = "#646477",
+                floatBorder = "#474747",
+                line = "#171717",
+                comment = "#474747",
                 builtin = "#bad1ce",
                 func = "#be8c8c",
                 string = "#deb896",
@@ -56,6 +56,6 @@ return {
                 delta = "#e6be8c",
             },
         })
-        -- vim.cmd.colorscheme("vague")
+        vim.cmd.colorscheme("vague")
     end
 }
