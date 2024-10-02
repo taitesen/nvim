@@ -59,3 +59,4 @@ vim.keymap.set("n", "<leader>3", ':lua require("harpoon.ui").nav_file(3)<CR>')
 vim.keymap.set("n", "<leader>4", ':lua require("harpoon.ui").nav_file(4)<CR>')
 
 vim.keymap.set("n", "<leader>hello", ':lua require("taitesen.raz").setup()<CR>')
+vim.keymap.set("n", ":", ":<C-f>");
