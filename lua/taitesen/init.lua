@@ -36,6 +36,13 @@ autocmd({ "BufWritePre" }, {
     command = [[%s/\s\+$//e]],
 })
 
+-- Map q to exit the command-line window
+vim.api.nvim_create_autocmd('CmdwinEnter', {
+    callback = function ()
+        vim.api.nvim_buf_set_keymap(0, 'n', 'q', ':quit<CR>', { noremap = true, silent = true })
+    end
+})
+
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "#aaaaaa" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "#aaaaaa" })
 
