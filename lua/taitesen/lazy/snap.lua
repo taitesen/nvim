@@ -4,7 +4,7 @@ return {
     opts = {
         save_path = "~/Pictures/code",
         has_breadcrumbs = true,
-        bg_theme = "peach", -- bamboo, sea, peach, grape, dusk, summer
+        bg_theme = "grape", -- bamboo, sea, peach, grape, dusk, summer
         mac_window_bar = true,
         title = "Codesnap.nvim",
         code_font_family = "Iosevka Nerd Font",
