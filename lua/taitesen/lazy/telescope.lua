@@ -73,8 +73,8 @@ return {
             require("telescope").load_extension("fzy_native")
             -- require("telescope").load_extension("harpoon")
 
-            -- vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#6b6b6b" })
-            -- vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#6b6b6b" })
+            vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#18191a" })
+            vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#18191a" })
             vim.keymap.set("n", "sf", ":lua require('telescope.builtin').find_files({ hidden = true })<CR>")
             vim.keymap.set("n", "<C-p>", ":lua require('telescope.builtin').git_files()<CR>")
             vim.keymap.set("n", "ss",
