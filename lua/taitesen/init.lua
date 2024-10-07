@@ -3,6 +3,10 @@ require("taitesen.remap")
 require("taitesen.lazy_init")
 require("taitesen.lazy.markdown")
 
+vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "#aaaaaa" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "#aaaaaa" })
+vim.api.nvim_set_hl(0, "CustomColor", { bg = "#ebbcba", fg = "#000000" })
+
 local augroup = vim.api.nvim_create_augroup
 local taitesengroup = augroup('taitesen', {})
 
@@ -24,7 +28,7 @@ autocmd('TextYankPost', {
     pattern = '*',
     callback = function()
         vim.highlight.on_yank({
-            higroup = 'IncSearch',
+            higroup = 'CustomColor',
             timeout = 40,
         })
     end,
@@ -38,13 +42,19 @@ autocmd({ "BufWritePre" }, {
 
 -- Map q to exit the command-line window
 vim.api.nvim_create_autocmd('CmdwinEnter', {
+    group = taitesengroup,
+    pattern = "*",
     callback = function ()
         vim.api.nvim_buf_set_keymap(0, 'n', 'q', ':quit<CR>', { noremap = true, silent = true })
     end
 })
 
-vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "#aaaaaa" })
-vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "#aaaaaa" })
+-- Do not auto comment new line
+autocmd("BufEnter", {
+    group = taitesengroup,
+    pattern = "*",
+    command = [[ set formatoptions-=cro ]],
+})
 
 autocmd('LspAttach', {
     group = taitesengroup,
