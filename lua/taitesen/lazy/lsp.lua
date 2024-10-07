@@ -70,6 +70,16 @@ return {
                         }
                     }
                 end,
+                ["clangd"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.clangd.setup {
+                        on_attach = function (client)
+                            client.server_capabilities.documentFormattingProvider = false
+                            client.server_capabilities.documentRangeFormattingProvider = false
+                        end,
+                        capabilities = capabilities,
+                    }
+                end,
             }
         })
 
@@ -77,6 +87,7 @@ return {
             --- Install these linters, formatters, debuggers automatically
             ensure_installed = {
                 'black',
+                'clang-format',
                 'flake8',
                 'isort',
                 'mypy',
