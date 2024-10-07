@@ -3,7 +3,9 @@ return {
         "nvim-telescope/telescope.nvim",
         dependencies = {
             "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope-fzy-native.nvim"
+            "nvim-telescope/telescope-fzy-native.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "nvim-telescope/telescope-ui-select.nvim"
         },
         config = function()
             local actions = require('telescope.actions')
@@ -18,7 +20,7 @@ return {
                     color_devicons    = true,
                     respect_gitignore = true,
                     sorting_strategy  = "ascending",
-                    prompt_position   = "bottom",
+                    prompt_position   = "top",
                     scroll_strategy   = "cycle",
                     file_previewer    = require('telescope.previewers').vim_buffer_cat.new,
                     grep_previewer    = require('telescope.previewers').vim_buffer_vimgrep.new,
@@ -71,8 +73,8 @@ return {
             require("telescope").load_extension("fzy_native")
             -- require("telescope").load_extension("harpoon")
 
-            vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#6b6b6b" })
-            vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#6b6b6b" })
+            -- vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#6b6b6b" })
+            -- vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#6b6b6b" })
             vim.keymap.set("n", "sf", ":lua require('telescope.builtin').find_files({ hidden = true })<CR>")
             vim.keymap.set("n", "<C-p>", ":lua require('telescope.builtin').git_files()<CR>")
             vim.keymap.set("n", "ss",
