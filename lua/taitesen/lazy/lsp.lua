@@ -73,7 +73,7 @@ return {
                 ["clangd"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.clangd.setup {
-                        on_attach = function (client)
+                        on_attach = function(client)
                             client.server_capabilities.documentFormattingProvider = false
                             client.server_capabilities.documentRangeFormattingProvider = false
                         end,
@@ -114,6 +114,7 @@ return {
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
                 { name = 'buffer' },
+                { name = 'path' },
             })
         })
 
