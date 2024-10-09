@@ -59,7 +59,9 @@ return {
                         }
                     },
                     buffers = {
-                        theme = "dropdown",
+                        -- theme = "dropdown",
+                        -- theme = "ivy",
+                        theme = "cursor",
                         sort_mru = true,
                         mappings = {
                             n = { ["<C-d>"] = actions.delete_buffer },
@@ -91,16 +93,16 @@ return {
 
             vim.keymap.set("n", "sr", function()
                 require("telescope.builtin").find_files({
-                    prompt_title = ".dotfiles",
-                    cwd = os.getenv("HOME") .. "/.local/src",
+                    prompt_title = "dwm dotfiles",
+                    cwd = os.getenv("HOME") .. "/Vaults/git/dotfiles",
                     hidden = true,
                 })
             end)
 
             vim.keymap.set("n", "sn", function()
                 require("telescope.builtin").find_files({
-                    prompt_title = ".dotfiles",
-                    cwd = os.getenv("HOME") .. "/.config/nvim",
+                    prompt_title = "neovim config",
+                    cwd = os.getenv("HOME") .. "/Vaults/git/nvim",
                     hidden = true,
                 })
             end)

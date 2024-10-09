@@ -44,7 +44,7 @@ autocmd({ "BufWritePre" }, {
 vim.api.nvim_create_autocmd('CmdwinEnter', {
     group = taitesengroup,
     pattern = "*",
-    callback = function ()
+    callback = function()
         vim.api.nvim_buf_set_keymap(0, 'n', 'q', ':quit<CR>', { noremap = true, silent = true })
     end
 })
