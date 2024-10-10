@@ -9,12 +9,12 @@ return {
                 number = "none",
                 float = "none",
                 error = "none",
-                comments = "none",
+                comments = "italic",
                 conditionals = "none",
                 functions = "none",
                 headings = "bold",
                 operators = "none",
-                strings = "none",
+                strings = "italic",
                 variables = "none",
 
                 -- keywords

@@ -3,7 +3,7 @@ return {
     build = "./install.sh",
     config = function()
         require("silicon").setup {
-            font = 'Iosevka Nerd Font=26',
+            font = 'IosevkaTerm Nerd Font=26',
             background = '#87f',
             theme = 'DarkNeon',
             line_number = false,
