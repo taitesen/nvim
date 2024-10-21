@@ -41,18 +41,12 @@ vim.keymap.set("n", "X", "<cmd>bd<CR>")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>ee", function()
-    vim.fn.feedkeys(":!$HOME/Vault/script/", "n")
-end)
-vim.keymap.set("n", "<leader>vv", "<cmd>badd $HOME/Vault/script/<CR>")
-vim.keymap.set("n", "<leader>co", "<cmd>e $HOME/.config/nvim/lua/taitesen/remap.lua<CR>")
+vim.keymap.set("n", "<leader>co", "<cmd>e $HOME/Vaults/git/nvim/lua/taitesen/remap.lua<CR>")
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", ";t", ":Telescope ")
 
 vim.keymap.set("n", ";w", ":WitSearchWiki ")
 vim.keymap.set("n", ";s", ":WitSearch ")
-
-vim.keymap.set("v", "<C-p>", ":WitSearchVisual<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
@@ -64,5 +58,4 @@ vim.keymap.set("n", "<leader>2", ':lua require("harpoon.ui").nav_file(2)<CR>')
 vim.keymap.set("n", "<leader>3", ':lua require("harpoon.ui").nav_file(3)<CR>')
 vim.keymap.set("n", "<leader>4", ':lua require("harpoon.ui").nav_file(4)<CR>')
 
-vim.keymap.set("n", "<leader>hello", ':lua require("taitesen.raz").setup()<CR>')
 vim.keymap.set("n", ":", ":<C-f>i");
