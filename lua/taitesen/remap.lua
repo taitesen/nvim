@@ -45,9 +45,6 @@ vim.keymap.set("n", "<leader>co", "<cmd>e $HOME/Vaults/git/nvim/lua/taitesen/rem
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", ";t", ":Telescope ")
 
-vim.keymap.set("n", ";w", ":WitSearchWiki ")
-vim.keymap.set("n", ";s", ":WitSearch ")
-
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
@@ -57,5 +54,3 @@ vim.keymap.set("n", "<leader>1", ':lua require("harpoon.ui").nav_file(1)<CR>')
 vim.keymap.set("n", "<leader>2", ':lua require("harpoon.ui").nav_file(2)<CR>')
 vim.keymap.set("n", "<leader>3", ':lua require("harpoon.ui").nav_file(3)<CR>')
 vim.keymap.set("n", "<leader>4", ':lua require("harpoon.ui").nav_file(4)<CR>')
-
-vim.keymap.set("n", ":", ":<C-f>i");
