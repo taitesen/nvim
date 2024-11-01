@@ -33,6 +33,7 @@ return {
                 "clangd",
                 "pyright",
                 "jdtls",
+                "cmake",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
