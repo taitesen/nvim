@@ -10,7 +10,7 @@ return {
             pad_vert = 80,
             pad_horiz = 50,
             output = {
-                path = "/home/taitesen/Pictures/code"
+                path = "/home/taitesen/Pictures/code/"
             },
             watermark = {
                 text = ' @taitesen',
