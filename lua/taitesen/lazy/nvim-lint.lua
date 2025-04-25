@@ -7,9 +7,8 @@ return {
         require('lint').linters_by_ft = {
             python = {
                 -- Uncomment whichever linters you prefet
-                'flake8',
+                'ruff',
                 'mypy',
-                'pylint',
             }
         }
     end

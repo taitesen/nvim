@@ -5,11 +5,15 @@ return {
         require("conform").setup({
             formatters_by_ft = {
                 lua = { "stylua" },
-                python = { "isort", "black" },
-                rust = { "rustfmt", lsp_format = "fallback" },
                 javascript = { "prettierd", "prettier", stop_after_first = true },
+                json = { "prettierd", "prettier", stop_after_first = true },
+                yml = { "prettierd", "prettier", stop_after_first = true },
+                markdown = { "prettierd", "prettier", stop_after_first = true },
+                python = { "ruff" },
+                rust = { "rustfmt", lsp_format = "fallback" },
                 c = { "clang_format" },
                 cpp = { "clang_format" },
+                sh = { "shfmt" },
             },
 
             formatters = {
