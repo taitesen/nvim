@@ -34,6 +34,8 @@ return {
                 "pyright",
                 "jdtls",
                 "cmake",
+                "ts_ls",
+                "eslint",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
