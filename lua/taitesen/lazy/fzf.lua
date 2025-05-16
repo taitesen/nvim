@@ -10,9 +10,9 @@ return {
                 function()
                     require('fzf-lua').lgrep_curbuf {
                         winopts = {
-                            height = 0.6,
+                            height = 1.0,
                             width = 0.5,
-                            preview = { vertical = 'up:70%' },
+                            preview = { vertical = 'up:90%' },
                         },
                         fzf_opts = {
                             ['--layout'] = 'reverse',
@@ -71,12 +71,12 @@ return {
                     },
                 },
                 winopts = {
-                    height = 0.7,
+                    height = 1.0,
                     width = 0.55,
                     preview = {
                         scrollbar = false,
                         layout = 'vertical',
-                        vertical = 'up:40%',
+                        vertical = 'up:80%',
                     },
                 },
                 defaults = { git_icons = false },
