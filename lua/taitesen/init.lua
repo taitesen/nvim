@@ -29,7 +29,7 @@ autocmd('TextYankPost', {
     callback = function()
         vim.highlight.on_yank({
             higroup = 'CustomColor',
-            timeout = 40,
+            timeout = 100,
         })
     end,
 })

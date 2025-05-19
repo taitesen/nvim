@@ -10,7 +10,7 @@ return {
                 function()
                     require('fzf-lua').lgrep_curbuf {
                         winopts = {
-                            height = 1.0,
+                            height = 0.6,
                             width = 0.5,
                             preview = { vertical = 'up:90%' },
                         },
@@ -21,7 +21,7 @@ return {
                 end,
                 desc = 'Grep current buffer',
             },
-            { 'sz', '<cmd>FzfLua highlights<cr>',                desc = 'Highlights' },
+            { 'sz', '<cmd>FzfLua builtin<cr>',                   desc = 'Builtin' },
             { 'sd', '<cmd>FzfLua lsp_document_diagnostics<cr>',  desc = 'Document diagnostics' },
             { 'sD', '<cmd>FzfLua lsp_workspace_diagnostics<cr>', desc = 'Workspace diagnostics' },
             { 'sf', '<cmd>FzfLua files<cr>',                     desc = 'Find files' },
@@ -71,12 +71,12 @@ return {
                     },
                 },
                 winopts = {
-                    height = 1.0,
+                    height = 0.5,
                     width = 0.55,
                     preview = {
                         scrollbar = false,
                         layout = 'vertical',
-                        vertical = 'up:80%',
+                        vertical = 'up:90%',
                     },
                 },
                 defaults = { git_icons = false },
