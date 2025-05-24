@@ -1,13 +1,13 @@
-# Neovim Config
+# MY NEOVIM INIT
 
-Distro: Arch Linux.
+Arch Linux Distribution
 
-## Pre-installation
+## :wrench: Pre-installation
 
 ```sh
 sudo pacman -S git wget curl ripgrep unzip ttf-jetbrains-mono-nerd fzf fd
 ```
-## Installation
+## :wrench: Installation
 
 <details><summary>Install</summary>
 
@@ -16,10 +16,6 @@ git clone https://github.com/taitesen/nvim.git ~/.config/nvim && cd ~/.config/nv
  ```
 </details>
 
-## Post-installation
-
-Run: `:MasonInstallAll` in neovim, after plugins are finished installing.
-
 <details><summary>Uninstall</summary>
 
 ```sh
@@ -27,20 +23,23 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
 </details>
 
-## Keybinds
+## :bulb: Keybinds
 
-### Default LEADER key is <kbd>    Space    </kbd>
+##### Default LEADER key is <kbd>    Space    </kbd>
 
-<details><summary>Telescope</summary>
+<details><summary>Fzf lua</summary>
 
 |                    keys  |                  actions      |
 |:-                        |:-                             |
-|<kbd>s</kbd><kbd>f</kbd>  |     find_files                |
-|<kbd>s</kbd><kbd>s</kbd>  |     grep_string               |
-|<kbd>s</kbd><kbd>g</kbd>  |     live_grep                 |
-|<kbd>s</kbd><kbd>b</kbd>  |     buffers                   |
-|<kbd>s</kbd><kbd>r</kbd>  |     opens '~/.config'  directory  |
-|<kbd>LEADER</kbd> + <kbd>v</kbd><kbd>h</kbd>  |     help_tags |
+|<kbd>s</kbd><kbd>s</kbd>  |     resume                    |
+|<kbd>s</kbd><kbd>c</kbd>  |     live grep current buffer  |
+|<kbd>s</kbd><kbd>z</kbd>  |     builtin                   |
+|<kbd>s</kbd><kbd>d</kbd>  |     document diagnostic       |
+|<kbd>s</kbd><kbd>D</kbd>  |     workspace diagnostic      |
+|<kbd>s</kbd><kbd>f</kbd>  |     files                     |
+|<kbd>s</kbd><kbd>g</kbd>  |     live grep                 |
+|<kbd>s</kbd><kbd>g</kbd>  |     grep visual(in visual mode|
+| <kbd>s</kbd><kbd>h</kbd> |     helptags                  |
 
 </details>
 
@@ -92,16 +91,5 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 |  <kbd>D</kbd>     |  delete        |
 |  <kbd>CTRL</kbd>  +  <kbd>n</kbd>  |          Open  Netrw  |
 |  <kbd>R</kbd>     |  rename        |
-
-</details>
-
-<details><summary>Others</summary>
-
-|    keys               |   actions                   |
-|:-  |                  :-  |
-|    <kbd>SHITF</kbd>   +   <kbd>l</kbd>              |  previous  buffer  |
-|    <kbd>SHITF</kbd>   +   <kbd>h</kbd>              |  next      buffer  |
-|    <kbd>SHITF</kbd>   +   <kbd>x</kbd>              |  delete    buffer  |
-|    <kbd>LEADER</kbd>  +   <kbd>c</kbd><kbd>o</kbd>  |  opens     'opens  nvim-keymaps  configuration'  |
 
 </details>
