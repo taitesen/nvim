@@ -10,8 +10,8 @@ return {
                 function()
                     require('fzf-lua').lgrep_curbuf {
                         winopts = {
-                            height = 0.6,
-                            width = 0.5,
+                            height = 0.3,
+                            width = 1.0,
                             preview = { vertical = 'up:90%' },
                         },
                         fzf_opts = {
@@ -71,9 +71,12 @@ return {
                     },
                 },
                 winopts = {
-                    height = 0.5,
-                    width = 0.55,
+                    border = "noborder",
+                    row = 100,
+                    height = 0.2,
+                    width = 1.0,
                     preview = {
+                        hidden = true,
                         scrollbar = false,
                         layout = 'vertical',
                         vertical = 'up:90%',
