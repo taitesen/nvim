@@ -5,10 +5,10 @@ return {
             transparent = true, -- don't set background
             style = {
                 -- "none" is the same thing as default. But "italic" and "bold" are also valid options
-                boolean = "none",
+                boolean = "bold",
                 number = "none",
                 float = "none",
-                error = "none",
+                error = "bold",
                 comments = "italic",
                 conditionals = "none",
                 functions = "none",
@@ -19,16 +19,28 @@ return {
 
                 -- keywords
                 keywords = "none",
-                keyword_return = "none",
+                keyword_return = "italic",
                 keywords_loop = "none",
                 keywords_label = "none",
                 keywords_exception = "none",
 
                 -- builtin
-                builtin_constants = "none",
+                builtin_constants = "bold",
                 builtin_functions = "none",
-                builtin_types = "none",
+                builtin_types = "bold",
                 builtin_variables = "none",
+            },
+            plugins = {
+                cmp = {
+                    match = "bold",
+                    match_fuzzy = "bold",
+                },
+                lsp = {
+                    diagnostic_error = "bold",
+                    diagnostic_hint = "none",
+                    diagnostic_info = "italic",
+                    diagnostic_warn = "bold",
+                },
             },
             -- Override colors
             colors = {
