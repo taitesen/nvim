@@ -26,9 +26,9 @@ return {
 
                 -- builtin
                 builtin_constants = "bold",
-                builtin_functions = "none",
+                builtin_functions = "bold",
                 builtin_types = "bold",
-                builtin_variables = "none",
+                builtin_variables = "bold",
             },
             plugins = {
                 cmp = {
@@ -44,7 +44,7 @@ return {
             },
             -- Override colors
             colors = {
-                bg = "#18191a",
+                bg = "#000000",
                 fg = "#6b6b6b",
                 floatBorder = "#474747",
                 line = "#171717",
@@ -68,6 +68,6 @@ return {
                 delta = "#e6be8c",
             },
         })
-        vim.cmd.colorscheme("vague")
+        -- vim.cmd.colorscheme("vague")
     end
 }

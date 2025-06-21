@@ -20,6 +20,7 @@ vim.opt.smartindent = true
 vim.opt.autoindent = true
 
 vim.opt.wrap = false
+vim.opt.cmdheight = 0
 
 vim.opt.swapfile = false
 vim.opt.backup = false
