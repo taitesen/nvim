@@ -4,11 +4,12 @@ return {
     config = function()
         require("silicon").setup {
             font = 'IosevkaTerm Nerd Font=26',
-            background = '#87f',
-            theme = 'DarkNeon',
+            background = '#bbac9b',
+            theme = 'gruvbox-dark',
             line_number = false,
             pad_vert = 80,
             pad_horiz = 50,
+            window_controls = true,
             output = {
                 path = "/home/taitesen/Pictures/code/"
             },

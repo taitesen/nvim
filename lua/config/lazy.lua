@@ -21,7 +21,7 @@ require("lazy").setup({
     },
     change_detection = { notify = false },
     ui = { border = "rounded" },
-    install = { colorscheme = { "mayhem" } },
+    install = { colorscheme = { "base16-black-metal-mayhem" } },
 })
 
 require("config.remap")
