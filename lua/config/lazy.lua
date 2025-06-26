@@ -21,7 +21,7 @@ require("lazy").setup({
     },
     change_detection = { notify = false },
     ui = { border = "rounded" },
-    install = { colorscheme = { "base16-black-metal-mayhem" } },
+    install = { colorscheme = { "gruvbox-material" } },
 })
 
 require("config.remap")

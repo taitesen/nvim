@@ -68,5 +68,6 @@ return {
                 delta = "#e6be8c",
             },
         })
+        -- vim.cmd.colorscheme "vague"
     end
 }
