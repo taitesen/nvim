@@ -4,15 +4,18 @@ return {
         'ibhagwan/fzf-lua',
         cmd = 'FzfLua',
         keys = {
-            { 'ss', '<cmd>FzfLua resume<cr>',                    desc = 'Resume last fzf command' },
             {
-                'sc',
+                'ss',
                 function()
                     require('fzf-lua').lgrep_curbuf {
+                        toggle_fullscreen = true,
                         winopts = {
                             height = 0.3,
                             width = 1.0,
-                            preview = { vertical = 'up:90%' },
+                            preview = {
+                                vertical = 'up:90%',
+                                hidden = false,
+                            },
                         },
                         fzf_opts = {
                             ['--layout'] = 'reverse',
@@ -21,7 +24,7 @@ return {
                 end,
                 desc = 'Grep current buffer',
             },
-            { 'sz', '<cmd>FzfLua builtin<cr>',                   desc = 'Builtin' },
+            { 'so', '<cmd>FzfLua builtin<cr>',                   desc = 'Builtin' },
             { 'sd', '<cmd>FzfLua lsp_document_diagnostics<cr>',  desc = 'Document diagnostics' },
             { 'sD', '<cmd>FzfLua lsp_workspace_diagnostics<cr>', desc = 'Workspace diagnostics' },
             { 'sf', '<cmd>FzfLua files<cr>',                     desc = 'Find files' },

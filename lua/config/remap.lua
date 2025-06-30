@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<C-n>", "<cmd>25Lex!<cr>")
+vim.keymap.set("n", "<C-n>", vim.cmd.Ex)
 vim.keymap.set("n", "<C-.>", "<C-w>>")
 vim.keymap.set("n", "<C-,>", "<C-w><")
 
